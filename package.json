@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "stdio": "^2.1.1"
+  },
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^16.4.0",
-    "ts-node": "^10.1.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.5"
   }
 }
