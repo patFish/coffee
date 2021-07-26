@@ -40,7 +40,6 @@ const boundaryFill = (canvas: string[][], parameters: string[]) => {
     h < canvas.length - 1
   ) {
     canvas[h][w] = color
-    drawCanvas(canvas)
     boundaryFill(canvas, [`${w + 1}`, `${h}`, color])
     boundaryFill(canvas, [`${w}`, `${h + 1}`, color])
     boundaryFill(canvas, [`${w - 1}`, `${h}`, color])
